@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khirana Dwicahyo — Portfolio</title>
+  <meta name="description" content="Portofolio Khirana Dwicahyo (Rana) — Informatika, data, desain, dan menulis.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23131313'/><text x='16' y='23' font-family='Arial Black,Arial' font-weight='900' font-size='18' text-anchor='middle' fill='%23C8261D'>R</text></svg>">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="#home" class="logo">Khirana<span>.</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" data-i18n="nav.about"></a></li>
+      <li><a href="#education" data-i18n="nav.education"></a></li>
+      <li><a href="#experience" data-i18n="nav.experience"></a></li>
+      <li><a href="#projects" data-i18n="nav.projects"></a></li>
+      <li><a href="#design" data-i18n="nav.design"></a></li>
+      <li><a href="#skills" data-i18n="nav.skills"></a></li>
+      <li><a href="#certificates" data-i18n="nav.certs"></a></li>
+      <li><a href="#contact" data-i18n="nav.contact"></a></li>
+    </ul>
+    <div class="nav__right">
+      <div class="lang" id="lang" data-lang="id" role="group" aria-label="Language">
+        <span class="lang__pill"></span>
+        <button data-set="id" aria-label="Bahasa Indonesia">ID</button>
+        <button data-set="en" aria-label="English">EN</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="wrap hero__grid">
+    <div class="hero__text reveal">
+      <p class="hero__label"><span class="dot"></span><span data-i18n="hero.open"></span></p>
+      <h1 class="hero__title" data-i18n="hero.title"></h1>
+      <p class="hero__lead" data-i18n="hero.lead"></p>
+      <div class="hero__cta">
+        <a href="#contact" class="btn" data-i18n="hero.cta"></a>
+        <a href="assets/docs/CV_Khirana_Dwicahyo.pdf" target="_blank" rel="noopener" class="btn btn--ghost" data-i18n="hero.cv"></a>
+      </div>
+      <dl class="hero__stats">
+        <div><dt data-i18n="stat.gpa"></dt><dd>3.58</dd></div>
+        <div><dt data-i18n="stat.intern"></dt><dd>2</dd></div>
+        <div><dt data-i18n="stat.projects"></dt><dd>5+</dd></div>
+        <div><dt data-i18n="stat.certs"></dt><dd>8</dd></div>
+      </dl>
+    </div>
+    <figure class="hero__photo reveal" data-d="1">
+      <img src="assets/img/rana-landscape.jpg" alt="Khirana Dwicahyo">
+      <figcaption><span>Khirana Dwicahyo — <span data-i18n="hero.role"></span></span><span>Tarakan, Indonesia</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= 1. PROFILE ================= -->
+<section id="about">
+  <div class="wrap about__grid">
+    <div class="about__photo reveal">
+      <div class="about__frame">
+        <img src="assets/img/rana-portrait.jpg" alt="Khirana Dwicahyo">
+        <div class="about__tag"><b>Khirana Dwicahyo</b><span data-i18n="about.tag"></span></div>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow reveal"><span class="num">01</span><span data-i18n="about.eyebrow"></span></span>
+      <h2 class="h-display reveal" data-i18n="about.title"></h2>
+      <p class="about__intro reveal" data-i18n="about.intro"></p>
+      <div class="about__body reveal">
+        <p data-i18n="about.p1"></p>
+        <p data-i18n="about.p2"></p>
+      </div>
+      <div class="interests">
+        <div class="interest reveal" data-d="1">
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+          <h4 data-i18n="int.1t"></h4><p data-i18n="int.1p"></p>
+        </div>
+        <div class="interest reveal" data-d="2">
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.6 7.6"/><circle cx="11" cy="11" r="2"/></svg></div>
+          <h4 data-i18n="int.2t"></h4><p data-i18n="int.2p"></p>
+        </div>
+        <div class="interest reveal" data-d="3">
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div>
+          <h4 data-i18n="int.3t"></h4><p data-i18n="int.3p"></p>
+        </div>
+      </div>
+      <p class="hobby reveal" data-i18n="about.hobby"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2. EDUCATION ================= -->
+<section class="edu" id="education">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal"><span class="num">02</span><span data-i18n="edu.eyebrow"></span></span>
+        <h2 class="h-display reveal" data-i18n="edu.title"></h2>
+      </div>
+      <p class="reveal" data-i18n="edu.sub"></p>
+    </div>
+
+    <div class="edu__main">
+      <div class="reveal">
+        <h3 class="uni__name">Universitas Islam Indonesia</h3>
+        <p class="uni__major" data-i18n="edu.major"></p>
+        <div class="uni__meta">
+          <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Sleman, Yogyakarta</span>
+          <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span data-i18n="edu.grad"></span></span>
+          <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg><span data-i18n="edu.degree"></span></span>
+        </div>
+      </div>
+      <div class="achievements">
+        <div class="ach reveal" data-d="1">
+          <div class="ach__big">3.58<small>GPA / IPK</small></div>
+          <div>
+            <h4 data-i18n="edu.honor"></h4>
+            <p class="paper-title">Cum Laude</p>
+            <p class="src" data-i18n="edu.honorP"></p>
+          </div>
+        </div>
+        <div class="ach reveal" data-d="2">
+          <div class="ach__big">S4<small>SINTA 4</small></div>
+          <div>
+            <h4 data-i18n="edu.pub"></h4>
+            <p class="paper-title">“Comparative Analysis of E-Commerce Sales of Halal-Labeled Products in Muslim Majority and Minority Countries”</p>
+            <p class="src"><b>International Journal of Social Science and Religion (IJSSR)</b> · Sinta 4 · <span data-i18n="edu.pubDate"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu__ext">
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="edu.extEyebrow"></span>
+        <h3>Kampus Merdeka : Ruangguru</h3>
+        <p class="program">Data &amp; Business Analytics</p>
+        <p data-i18n="edu.extP"></p>
+        <div class="uni__meta">
+          <span class="chip">Ruangguru Camp × Kampus Merdeka</span>
+          <span class="chip" data-i18n="edu.extGpa"></span>
+        </div>
+      </div>
+      <div class="cert-feature reveal" data-d="1" data-lightbox="assets/certs/ruangguru.jpg" data-lb-title="Data &amp; Business Analytics Bootcamp" data-lb-sub="Ruangguru Camp × Kampus Merdeka">
+        <img src="assets/certs/ruangguru.jpg" alt="Sertifikat Data & Business Analytics Bootcamp — Ruangguru">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. EXPERIENCE ================= -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal"><span class="num">03</span><span data-i18n="exp.eyebrow"></span></span>
+        <h2 class="h-display reveal" data-i18n="exp.title"></h2>
+      </div>
+      <p class="reveal" data-i18n="exp.sub"></p>
+    </div>
+    <div class="timeline" id="timeline" data-render><div class="tl-progress" id="tlProgress"></div></div>
+  </div>
+</section>
+
+<!-- ================= 4. PROJECTS ================= -->
+<section class="dark" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal"><span class="num">04</span><span data-i18n="proj.eyebrow"></span></span>
+        <h2 class="h-display reveal" data-i18n="proj.title"></h2>
+      </div>
+      <p class="reveal" data-i18n="proj.sub"></p>
+    </div>
+    <div class="projects__grid" id="projectsGrid" data-render></div>
+  </div>
+</section>
+
+<!-- ================= 5. DESIGN ================= -->
+<section class="design" id="design">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal"><span class="num">05</span><span data-i18n="des.eyebrow"></span></span>
+        <h2 class="h-display reveal" data-i18n="des.title"></h2>
+      </div>
+      <p class="reveal" data-i18n="des.sub"></p>
+    </div>
+    <div class="design__grid" id="designGrid" data-render></div>
+  </div>
+</section>
+
+<!-- ================= 6. SKILLS & TOOLS ================= -->
+<section class="skills" id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal"><span class="num">06</span><span data-i18n="sk.eyebrow"></span></span>
+        <h2 class="h-display reveal" data-i18n="sk.title"></h2>
+      </div>
+      <p class="reveal" data-i18n="sk.sub"></p>
+    </div>
+    <div class="skills__grid">
+      <div id="skillGroups" data-render></div>
+      <div class="reveal">
+        <div class="tools-head">
+          <h3 data-i18n="sk.tools"></h3>
+          <div class="tool-filter" id="toolFilter" data-render></div>
+        </div>
+        <div class="tools" id="tools" data-render></div>
+        <div class="langs"><span data-i18n="sk.langs"></span> <b data-i18n="sk.langsList"></b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7. CERTIFICATES ================= -->
+<section id="certificates">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow reveal"><span class="num">07</span><span data-i18n="cert.eyebrow"></span></span>
+        <h2 class="h-display reveal" data-i18n="cert.title"></h2>
+      </div>
+      <p class="reveal" data-i18n="cert.sub"></p>
+    </div>
+    <div class="certs__stage reveal">
+      <div class="certs__viewport" id="certViewport">
+        <div class="certs__track" id="certTrack" data-render></div>
+      </div>
+      <div class="certs__controls">
+        <div class="certs__count" id="certCount">01 <span>/ 08</span></div>
+        <div class="certs__dots" id="certDots"></div>
+        <div class="arrows">
+          <button class="arrow" id="certPrev" aria-label="Previous"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+          <button class="arrow arrow--next" id="certNext" aria-label="Next"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+      <div class="certs__thumbs" id="certThumbs"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 8. CONTACT ================= -->
+<section class="dark contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow reveal"><span class="num">08</span><span data-i18n="ct.eyebrow"></span></span>
+    <div class="contact__top">
+      <h2 class="contact__title reveal" data-i18n="ct.title"></h2>
+      <div class="reveal" data-d="1">
+        <p data-i18n="ct.sub"></p>
+        <a class="btn btn--light" href="mailto:ranamain28@gmail.com" data-i18n="ct.cta"></a>
+      </div>
+    </div>
+    <div class="contacts">
+      <a class="ccard reveal" href="mailto:ranamain28@gmail.com">
+        <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="M3 6l9 7 9-7"/></svg></span>
+        <span><small>Gmail</small><b>ranamain28@gmail.com</b></span>
+        <button class="copy" data-copy="ranamain28@gmail.com" data-i18n="ct.copy"></button>
+        <svg class="arrow-ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg>
+      </a>
+      <a class="ccard reveal" data-d="1" href="https://www.linkedin.com/in/khiranadwicahyo" target="_blank" rel="noopener">
+        <span class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></span>
+        <span><small>LinkedIn</small><b>in/khiranadwicahyo</b></span>
+        <svg class="arrow-ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg>
+      </a>
+      <a class="ccard reveal" data-d="2" href="https://www.instagram.com/hai_ranaaa" target="_blank" rel="noopener">
+        <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor"/></svg></span>
+        <span><small>Instagram</small><b>@hai_ranaaa</b></span>
+        <svg class="arrow-ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg>
+      </a>
+      <a class="ccard reveal" data-d="3" href="https://medium.com/@khiranadwicahyo" target="_blank" rel="noopener">
+        <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><ellipse cx="6.8" cy="12" rx="6.3" ry="6.4"/><ellipse cx="17" cy="12" rx="3.1" ry="6"/><ellipse cx="22.3" cy="12" rx="1.2" ry="5.4"/></svg></span>
+        <span><small>Medium</small><b>@khiranadwicahyo</b></span>
+        <svg class="arrow-ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg>
+      </a>
+    </div>
+    <footer class="footer">
+      <span>© <span id="year">2026</span> Khirana Dwicahyo. <span data-i18n="ct.rights"></span></span>
+      <a href="#home" class="totop"><span data-i18n="ct.top"></span> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+    </footer>
+  </div>
+</section>
+
+</main>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <figure><img id="lbImg" alt=""><figcaption><b id="lbTitle"></b><span id="lbSub"></span></figcaption></figure>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
