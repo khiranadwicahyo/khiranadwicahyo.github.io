@@ -181,20 +181,22 @@ const EXPERIENCE = [
     sub: { id: "Remote · Rakamin Academy", en: "Remote · Rakamin Academy" },
     company: { id: "ID/X Partners", en: "ID/X Partners" },
     role: { id: "Data Scientist (Project-Based Internship)", en: "Data Scientist (Project-Based Internship)" },
-    tags: ["Python", "XGBoost", "SMOTE"],
+    tags: ["Python", "XGBoost", "SHAP", "Streamlit"],
     link: "https://github.com/khiranadwicahyo/implementation-of-prediction-model-for-credit-risk",
     points: {
       id: [
-        "Membersihkan, mentransformasi, dan meng-encode data nasabah mentah dengan Python menjadi dataset siap pakai untuk pemodelan risiko kredit.",
-        "Menerapkan SMOTE untuk mengatasi ketidakseimbangan kelas pada data kredit.",
-        "Membandingkan 5 model klasifikasi (XGBoost, Random Forest, Decision Tree, AdaBoost, Logistic Regression) dengan 5-fold cross-validation; XGBoost terpilih dengan akurasi, presisi, dan recall 99,3%.",
-        "Melakukan analisis feature importance dan menemukan “Recoveries” sebagai variabel paling berpengaruh."
+        "Membangun model prediksi risiko gagal bayar dari data pinjaman Lending Club 2007–2014 (466.285 baris, 75 kolom) dengan Python.",
+        "Mengaudit ulang model versi pertama (akurasi 99,3%) dan membuktikan lewat eksperimen ablation bahwa angka itu berasal dari data leakage — terutama fitur pasca-pencairan seperti “recoveries” dan SMOTE yang dijalankan sebelum train-test split.",
+        "Membangun ulang pipeline dengan benar: hanya fitur yang tersedia saat pengajuan, split out-of-time, serta imputasi, encoding, dan SMOTE di dalam Pipeline; membandingkan 7 kandidat model lewat 5-fold cross-validation.",
+        "Model XGBoost final mencapai ROC-AUC 0,656 (Gini 0,312, KS 0,231) pada data out-of-time, mengungguli baseline sub-grade, dengan bad rate decile tertinggi 25,2% vs. terendah 4,5%.",
+        "Menganalisis dampak bisnis berbagai threshold (approval rate, bad rate, arus kas) dan menyajikannya dalam dashboard Streamlit interaktif dengan penjelasan SHAP per peminjam."
       ],
       en: [
-        "Cleaned, transformed, and encoded raw customer data in Python into a production-ready dataset for credit risk modeling.",
-        "Applied SMOTE oversampling to address class imbalance in the credit dataset.",
-        "Benchmarked 5 classifiers (XGBoost, Random Forest, Decision Tree, AdaBoost, Logistic Regression) with 5-fold cross-validation; selected XGBoost at 99.3% accuracy, precision, and recall.",
-        "Ran feature importance analysis, identifying “Recoveries” as the most influential variable."
+        "Built a default-risk prediction model on Lending Club 2007–2014 loan data (466,285 rows, 75 columns) in Python.",
+        "Audited the first version (99.3% accuracy) and proved through an ablation experiment that the score came from data leakage — mainly post-origination features such as “recoveries” and SMOTE applied before the train-test split.",
+        "Rebuilt the pipeline correctly: application-time features only, an out-of-time split, and imputation, encoding, and SMOTE inside a Pipeline; compared 7 candidate models with 5-fold cross-validation.",
+        "The final XGBoost model reached ROC-AUC 0.656 (Gini 0.312, KS 0.231) on out-of-time data, beating a sub-grade baseline, with a 25.2% bad rate in the top score decile vs. 4.5% in the bottom.",
+        "Analyzed the business impact of different thresholds (approval rate, bad rate, cash flow) and presented it in an interactive Streamlit dashboard with per-borrower SHAP explanations."
       ]
     }
   }
@@ -236,14 +238,17 @@ const PROJECTS = [
   },
   {
     kind: "intern", art: "scatter",
-    title: "Credit Risk Prediction",
+    title: "Credit Risk Prediction v2",
     org: "ID/X Partners",
     desc: {
-      id: "Model prediksi risiko kredit untuk mendeteksi peminjam berisiko tinggi sejak dini, menggunakan SMOTE dan XGBoost dengan performa 99,3%.",
-      en: "A credit risk prediction model to flag high-risk borrowers early, using SMOTE and XGBoost with 99.3% performance."
+      id: "Audit dan revisi model risiko kredit: membuktikan akurasi 99% versi pertama berasal dari data leakage, lalu membangun ulang pipeline yang benar — ROC-AUC 0,656 pada data out-of-time, lengkap dengan dashboard Streamlit.",
+      en: "Audit and rebuild of a credit risk model: proved the first version's 99% accuracy came from data leakage, then rebuilt a sound pipeline — ROC-AUC 0.656 on out-of-time data, with a Streamlit dashboard."
     },
-    tools: ["Python", "XGBoost", "SMOTE"],
-    links: [{ label: { id: "Lihat di GitHub", en: "View on GitHub" }, url: "https://github.com/khiranadwicahyo/implementation-of-prediction-model-for-credit-risk" }]
+    tools: ["Python", "XGBoost", "SHAP", "Streamlit"],
+    links: [
+      { label: { id: "Coba Dashboard", en: "Try the Dashboard" }, url: "https://credit-risk-model-implementation-khirana.streamlit.app/" },
+      { label: { id: "GitHub", en: "GitHub" }, url: "https://github.com/khiranadwicahyo/implementation-of-prediction-model-for-credit-risk" }
+    ]
   },
   {
     kind: "intern", art: "bars",
